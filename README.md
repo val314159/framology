@@ -1,15 +1,12 @@
 framology
 =========
 
-a cool framework
+#### To Install:
+```
+sh install.sh
+```
 
-
-To Install:
-
-> sh install.sh
-
-To Run:
-
+#### To Run:
 ```
 . env.sh ; python svr.py
 
