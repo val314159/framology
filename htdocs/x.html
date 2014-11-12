@@ -1,0 +1,17 @@
+
+<div id="app">
+app
+</div>
+
+<script src="http://stackio.dotcloud.com/downloads/stack.io.js"></script>
+<script>
+stack.io({host: "http://localhost:8080"}, function(error, client) {
+    client.login("demo", "demo-password", function(error) {
+        client.use("test-service", function(error, test) {
+            test.say_hello("Bob", function(error, response) {
+                console.log(response); //=> prints "Hello, Bob!"
+            });
+        });
+    });
+});
+</script>

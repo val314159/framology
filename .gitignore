@@ -1,3 +1,8 @@
+include/python*
+include/site
+node_modules
+bin
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -52,3 +57,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# emacs backups
+*~
+\#*
+.\#*
