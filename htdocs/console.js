@@ -2,7 +2,7 @@ Console = {
     activate: function(){
 	this.login();
     },
-
+    
     config: {
 	url: "http://localhost:8080"
     },
@@ -13,6 +13,10 @@ Console = {
     },
 
     name: 'Bob',
+
+    $$update_input: function(name,value){
+	LOG("$$update_input(" + name + value);
+    },
 
     login: function() {
 	var self=Console;
@@ -27,7 +31,7 @@ Console = {
 			$HTML("#status","Success");
 			client.use("test-service", function(error, test) {
 				$HTML("#status","Returned");
-				test.say_hello("Bob", function(error, response) {
+				test.say_hello(self.name, function(error, response) {
 					$HTML("#lastReturn",response);
 				    });
 			    });

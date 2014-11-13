@@ -3,15 +3,21 @@
 <script src="util.js"></script>
 <script src="console.js"></script>
 
-<div id="app">
+<div id="Console">
 
   <h1>Framology Console</h1>
 
   <div id="table">
     <table border=1>
-      <tr><td>username:</td><td><input id="username--input"></td></tr>
-      <tr><td>password:</td><td><input id="password--input"></td></tr>
-      <tr><td>Name:    </td><td><input></td></tr>
+      <tr><td>username:</td><td><input id="username--input"
+onchange="Console.$$update_input('username',this.value)"
+></td></tr>
+      <tr><td>password:</td><td><input id="password--input"
+onchange="Console.$$update_input('password',this.value)"
+></td></tr>
+      <tr><td>Name:    </td><td><input id="name--input"
+onchange="Console.$$update_input('name',this.value)"
+></td></tr>
       <tr><td>lastReturn:   </td><td>[<span id="lastReturn"  >...</span>]</td></tr>
       <tr><td>status:       </td><td>[<span id="status"      >...</span>]</td></tr>
       <tr><td>login:        </td><td>[<span id="login"       >...</span>]</td></tr>
