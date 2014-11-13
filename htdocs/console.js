@@ -1,5 +1,8 @@
-Console = {
+var Console = {
     activate: function(){
+	console.log("-- alogin ");
+	console.log("-- alogin "+this);
+	console.log("-- alogin "+Console);
 	this.login();
     },
     
@@ -14,12 +17,20 @@ Console = {
 
     name: 'Bob',
 
-    $$update_input: function(name,value){
-	LOG("$$update_input(" + name + value);
+    $$update2: function(name,value,type){
+	console.log("-- update2 ");
+	console.log("-- update2 "+this);
+	console.log("-- update2 "+Console);
+	var arr = name.split('.');
+	this[arr[0]][arr[1]] = value;
     },
 
     login: function() {
-	var self=Console;
+	console.log("-- login ");
+	console.log("-- login "+this);
+	console.log("-- login "+Console);
+	//var self=Console;
+	var self=this;
 	var username=Console.authInfo.username;
 	var password=Console.authInfo.password;
 	console.log("LOGIN XXX:"+username);
