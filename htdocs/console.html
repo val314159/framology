@@ -1,0 +1,25 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/sizzle/2.0.0/sizzle.min.js"></script>
+<script src="http://stackio.dotcloud.com/downloads/stack.io.js"></script>
+<script src="util.js"></script>
+<script src="console.js"></script>
+
+<div id="app">
+
+  <h1>Framology Console</h1>
+
+  <div id="table">
+    <table border=1>
+      <tr><td>username:</td><td><input id="username--input"></td></tr>
+      <tr><td>password:</td><td><input id="password--input"></td></tr>
+      <tr><td>Name:    </td><td><input></td></tr>
+      <tr><td>lastReturn:   </td><td>[<span id="lastReturn"  >...</span>]</td></tr>
+      <tr><td>status:       </td><td>[<span id="status"      >...</span>]</td></tr>
+      <tr><td>login:        </td><td>[<span id="login"       >...</span>]</td></tr>
+      <tr><td>password:     </td><td>[<span id="password"    >...</span>]</td></tr>
+      <tr><td>access-token: </td><td>[<span id="access-token">...</span>]</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<script>Console.activate()</script>
