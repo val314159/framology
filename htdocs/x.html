@@ -1,17 +1,10 @@
-
 <div id="app">
-app
+app [ <span id="app_output"></span> ]
+<p>
+<button onclick="App.msg('qwert')">BBBBBB</button>
+<p>
+[ <span id="app_output2"></span> ]
 </div>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/sizzle/2.0.0/sizzle.min.js"></script>
 <script src="http://stackio.dotcloud.com/downloads/stack.io.js"></script>
-<script>
-stack.io({host: "http://localhost:8080"}, function(error, client) {
-    client.login("demo", "demo-password", function(error) {
-        client.use("test-service", function(error, test) {
-            test.say_hello("Bob", function(error, response) {
-                console.log(response); //=> prints "Hello, Bob!"
-            });
-        });
-    });
-});
-</script>
+<script src="x.js"></script>

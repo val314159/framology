@@ -3,11 +3,26 @@
         "demo": {
             "password": "demo-password",
             "groups": ["demo"]
+        },
+        "val": {
+            "password": "pass",
+            "groups": ["demo","admin"]
+        },
+        "annebot": {
+            "password": "pass",
+            "groups": ["demo","admin"]
+        },
+        "dude": {
+            "password": "pass",
+            "groups": ["demo"]
         }
     },
 
     "groups": {
         "demo": {
+            ".+": [".+"]
+        },
+        "admin": {
             ".+": [".+"]
         }
     }
