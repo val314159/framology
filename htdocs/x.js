@@ -10,15 +10,10 @@ function $HTML(x,y){
 var App = new function(){
 	var self = this;
 	var _msg = "hello there";
-	self.$$$msg = function(y){
-	    if(!$U(y))$HTML(id,_msg=y);
+	self.msg = function(v){
+	    if(!$U(v))$HTML("#app_output2",_msg=v);
 	    return _msg;
 	};
-	self.msg = function(id){
-	    function(y){
-		if(!$U(y))$HTML(id,_msg=y);
-		return _msg;
-	    }}("#app_output");
 	var login = self.login = {
 	    username: 'demo',
 	    password: 'demo-password'
